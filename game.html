@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="style.css" rel="stylesheet">
+  <script src="script.js" defer></script>
+  <title>Form</title>
+</head>
+<body>
+<!-- HTML structure for the game board, reset button, and score tracker -->
+<div id="game">
+  <table>
+    <tr>
+      <td id="cell-0" class="cell"></td>
+      <td id="cell-1" class="cell"></td>
+      <td id="cell-2" class="cell"></td>
+    </tr>
+    <tr>
+      <td id="cell-3" class="cell"></td>
+      <td id="cell-4" class="cell"></td>
+      <td id="cell-5" class="cell"></td>
+    </tr>
+    <tr>
+      <td id="cell-6" class="cell"></td>
+      <td id="cell-7" class="cell"></td>
+      <td id="cell-8" class="cell"></td>
+    </tr>
+  </table>
+  <button id="reset-button">Reset</button>
+  <div id="scores">
+    <p>X: <span id="score-x">0</span></p>
+    <p>O: <span id="score-o">0</span></p>
+  </div>
+  <button id="reset-score" onclick="resetScr()">Reset score</button>
+</div>
+</body>
+</html>
